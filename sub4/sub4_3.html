@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객센터:오시는 길</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="https://kit.fontawesome.com/f2fbef274a.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="./css/sub4_common.css">
+    <link rel="stylesheet" href="./css/sub4_3.css">
+
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c3cb861953974ce63df490948b47640d"></script>
+    <script src="./js/map.js"></script>
+</head>
+<body>
+     <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">네비게이션바로가기</a>
+    </div>
+    <div id="wrap">
+      <header id="headerArea">
+            
+        </header> 
+
+        <div class="visual">
+            <img src="./images/common/sub_visual4.jpg" alt="">
+            <strong class="hidden">브랜드</strong>
+        </div>
+
+        <div class="sub_nav">
+            <ul>
+                <li><a href="./sub4_1.html">FAQ</a></li>
+                <li><a href="./sub4_2.html">소비자중심경영</a></li>
+                <li><a class="active" href="./sub4_3.html">오시는길</a></li>
+            </ul>
+        </div>
+        
+    <main id="content">
+    <article>
+        <div class="title_area">
+            <div class="line_map">
+                HOME &gt; 고객센터 &gt; <strong>오시는길</strong>
+            </div>
+            <h2>오시는길<span>Location</span></h2>
+            <p>"한국화장품으로 오시는 가장 편한 방법을 안내합니다"</p>
+        </div>
+
+        <hr class="sec_divider">
+
+        <div class="centet_area">
+
+            <div class="location_info">
+                <dl class="location_info_main">
+                    <div>
+                        <dt><span class="sec_badge">LOCATION</span>주소</dt>
+                        <dd>서울특별시 종로구 청계천로 35</dd>
+                    </div>
+                    <div>
+                        <dt><span class="sec_badge">TEL</span>전화</dt>
+                        <dd>080-000-0000</dd>
+                    </div>
+                    <div>
+                        <dt><span class="sec_badge">FAX</span>팩스</dt>
+                        <dd>02-000-0000</dd>
+                    </div>
+                </dl>
+            </div>
+
+            <div id="map"></div>
+
+            <div class="location_transport">
+
+                <section class="transport_block">
+                    <h3><span class="sec_badge">BUS</span>버스</h3>
+                    <ul class="bus_list">
+                        <li>
+                            <strong class="bus_num bus_num--blue">402</strong>
+                            <div class="bus_info">
+                                <p class="bus_route">종로5가 ↔ 강남역</p>
+                                <p class="bus_stop">승차 : 종로5가(정류장 ID 01234) / 하차 : 청계광장(정류장 ID 05678)</p>
+                                <p class="bus_walk">도보 3분 소요</p>
+                            </div>
+                        </li>
+                        <li>
+                            <strong class="bus_num bus_num--green">7212</strong>
+                            <div class="bus_info">
+                                <p class="bus_route">불광동 ↔ 잠실역</p>
+                                <p class="bus_stop">승차 : 종각역(정류장 ID 02345) / 하차 : 청계광장(정류장 ID 05678)</p>
+                                <p class="bus_walk">도보 3분 소요</p>
+                            </div>
+                        </li>
+                        <li>
+                            <strong class="bus_num bus_num--red">9714</strong>
+                            <div class="bus_info">
+                                <p class="bus_route">상암동 ↔ 서울역</p>
+                                <p class="bus_stop">승차 : 종로2가(정류장 ID 03456) / 하차 : 청계광장(정류장 ID 05678)</p>
+                                <p class="bus_walk">도보 5분 소요</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="transport_block">
+                    <h3><span class="sec_badge">SUBWAY</span>지하철</h3>
+                    <ul class="subway_list">
+                        <li>
+                            <span class="subway_line subway_line--line1">1</span>
+                            <div class="subway_info">
+                                <strong>종각역</strong>
+                                <p>3번 출구 하차 · 도보 5분 소요</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="subway_line subway_line--line5">5</span>
+                            <div class="subway_info">
+                                <strong>광화문역</strong>
+                                <p>5번 출구 하차 · 도보 8분 소요</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+            </div>
+
+        </div>
+    </article>
+</main>
+            
+
+
+        <footer id="footerArea">
+            
+        </footer>
+
+    </div>
+
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../js/jquery.easing.1.3.js"></script>
+    <script src="../sub4/js/map.js"></script>
+     <script>
+        $('#headerArea').load('../common/sub_header.html',function(){
+            //function(){} -> main.header.html의 로드가 완료가 되면...
+            $.getScript('../js/fullnav.js');  //스크립트 js 파일을 동작시키는 메소드
+        });
+        $('#footerArea').load('../common/sub_footer.html',function(){
+            $.getScript('../js/select.js');
+        });
+    </script>
+</body>
+</html>

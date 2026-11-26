@@ -1,0 +1,163 @@
+#content .location_info{
+   padding: 100px 0 80px; 
+}
+#content #map{
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    border: 10px solid #ccc;
+    margin-bottom: 100px;
+}
+#content .location_info_main{
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+}
+#content .location_info_main > div{
+    flex: 1;
+    text-align: center;
+    padding: 0 20px;
+}
+#content .location_info_main > div:first-child{
+    border-left: none;
+}
+#content .location_info_main dt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 12px;
+}
+#content .location_info_main dd{
+    font-size: 1.15rem;
+    color: #222;
+    margin: 0;
+}
+
+/* 지도 */
+#content #map{
+    width: 1200px;
+    height: 420px;
+    margin: 60px auto;
+}
+
+#content #map{
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    border: 10px solid #ccc;
+    margin-bottom: 100px;
+}
+
+/* 교통 정보 공통 */
+#content .location_transport{
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 140px;
+}
+#content .transport_block{
+    margin-bottom: 70px;
+}
+#content .transport_block h3{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.5rem;
+    color: #222;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+#content .sec_badge{
+    display: inline-block;
+    font-size: .85rem;
+    letter-spacing: .1em;
+    color: var(--color-point1);
+    border: 1px solid var(--color-point1);
+    border-radius: 20px;
+    padding: 4px 14px;
+}
+
+/* 버스 목록 */
+#content .bus_list li{
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 22px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+#content .bus_num{
+    flex: none;
+    width: 70px;
+    text-align: center;
+    color: #fff;
+    border-radius: 6px;
+    padding: 8px 0;
+    font-size: 1rem;
+}
+#content .bus_num--blue{
+    background: #0068B7;
+}
+#content .bus_num--green{
+    background: #53B332;
+}
+#content .bus_num--red{
+    background: #E60012;
+}
+#content .bus_route{
+    margin: 0 0 4px;
+    font-weight: 600;
+    color: #222;
+    font-size: 1.05rem;
+}
+#content .bus_stop{
+    margin: 0 0 4px;
+    color: #555;
+    font-size: .95rem;
+}
+#content .bus_walk{
+    margin: 0;
+    color: var(--color-point1);
+    font-size: .95rem;
+}
+
+/* 지하철 목록 */
+#content .subway_list li{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 22px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+#content .subway_line{
+    flex: none;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+#content .subway_info strong{
+    display: block;
+    font-size: 1.1rem;
+    color: #222;
+    margin-bottom: 4px;
+}
+#content .subway_info p{
+    margin: 0;
+    font-size: .9rem;
+    color: #888;
+}
+#content .subway_line--line1{
+    background: #004A85;
+}
+#content .subway_line--line5{
+    background: #794698;
+}

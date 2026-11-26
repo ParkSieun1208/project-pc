@@ -1,0 +1,107 @@
+#content .overview_sec{
+    background: #fff;
+    padding: 70px 0 0;
+}
+#content .overview_sec:first-child{
+    padding-top: 100px;
+}
+#content .overview_sec_inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+#content .overview_sec_inner .sec_badge{
+    display: block;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: .85rem;
+    letter-spacing: .2em;
+    color: var(--color-point1);
+}
+#content .overview_sec_inner h3{
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #222;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--color-point1);
+}
+#content .overview_note{
+    margin-bottom: 15px;
+    text-align: right;
+    font-size: .9rem;
+    color: #888;
+}
+
+#content .overview_table{
+    width: 100%;
+    margin: 0 auto 100px;
+    border-collapse: collapse;
+}
+
+#content .overview_table tr{
+    border-bottom: 1px solid #eee;
+}
+#content .overview_table th{
+    width: 160px;
+    padding: 18px 20px;
+    background: var(--color-sub1);
+    text-align: left;
+    font-size: .95rem;
+    font-weight: 600;
+    color: #333;
+}
+#content .overview_table td{
+    padding: 18px 24px;
+    font-size: .95rem;
+    color: #444;
+}
+#content .overview_table .sub_note{
+    display: block;
+    font-size: .78rem;
+    font-weight: 400;
+    color: #999;
+    margin-top: 4px;
+}
+
+#content .overview_table--grid thead th{
+    padding: 16px 20px;
+    background: var(--color-sub1);
+    font-size: .92rem;
+    font-weight: 700;
+    color: #222;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+#content .overview_table--grid tbody td{
+    padding: 16px 20px;
+    font-size: .92rem;
+    color: #444;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+#content .overview_table--group tbody td:nth-child(2){
+    text-align: left;
+    font-weight: 500;
+    color: #222;
+}
+#content .overview_table--group tbody td:last-child{
+    text-align: left;
+}
+
+#content .badge_status{
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: .82rem;
+    font-weight: 600;
+    color: #888;
+    background: #f0f0f0;
+}
+#content .badge_status--listed{
+    color: #fff;
+    background: var(--color-point1);
+}
+#content .badge_status--overseas{
+    color: var(--color-point2);
+    background: var(--color-sub2);
+}

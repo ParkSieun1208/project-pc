@@ -1,0 +1,99 @@
+#content .process_step{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+}
+#content .process_step li{
+    position: relative;
+    flex: 1;
+    padding: 0 16px;
+    text-align: center;
+}
+#content .process_step li + li::before{
+    content: "\203A";
+    position: absolute;
+    left: -6px;
+    top: 22px;
+    color: var(--color-point1);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+#content .process_num{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--color-point1), var(--color-point2));
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: 0 4px 10px rgba(176,105,92,.25);
+}
+#content .process_step strong{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+    color: #222;
+}
+#content .process_step p{
+    font-size: .74rem;
+    line-height: 1.6;
+    color: #777;
+    word-break: keep-all;
+}
+
+#content .overview_table{
+    width: 100%;
+    margin: 0 auto 100px;
+    border-collapse: collapse;
+}
+#content .overview_table tr{
+    border-bottom: 1px solid #eee;
+}
+#content .overview_table--grid thead th{
+    padding: 16px 20px;
+    background: var(--color-sub2);
+    font-size: .92rem;
+    font-weight: 700;
+    color: #222;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+#content .overview_table--grid tbody th{
+    width: 160px;
+    padding: 16px 20px;
+    background: var(--color-sub1);
+    font-size: .92rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+#content .overview_table--grid tbody td{
+    padding: 16px 24px;
+    font-size: .92rem;
+    color: #444;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+#content .dot_list li::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 16px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--color-point3);
+}
+#content .dot_list li{
+    position: relative;
+    padding: 6px 0 6px 16px;
+    font-size: .95rem;
+    line-height: 1.7;
+    color: #555;
+}

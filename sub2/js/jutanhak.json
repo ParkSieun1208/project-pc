@@ -1,0 +1,73 @@
+{
+    "sam": [
+        {
+            "Name": "쥬단학 백스테이지 글로우 맥시마이저 팔레트",
+            "Price": 79000,
+            "Descript": "멀티-유즈 하이라이터 & 블러쉬 - 모든 각도에서 빛나는 광채",
+            "best": "Y",
+            "Image": "./images/common/ju1.jpg",
+            "pop_img": "./images/common/jub1.jpg",
+            "pop_tit": "JUTANHAK LIP-PRESSION Glow lasting Tint"
+        },
+        {
+            "Name": "쥬단학 포에버 누드 래디언트 필터",
+            "Price": 56000,
+            "Descript": "세팅 블러 파우더 - 투명하게 빛나는 루미너스 매트 피니쉬",
+            "best": "Y",
+            "Image": "./images/common/ju2.jpg",
+            "pop_img": "./images/common/jub2.jpg",
+            "pop_tit": "JUTANHAK Pro-lasting Finish Powder"
+        },
+        {
+            "Name": "쥬단학 포에버 스킨 퍼펙트 스틱",
+            "Price": 40000,
+            "Descript": "멀티-유즈 파운데이션 스틱 - 피부 결점 보정 - 24시간 지속 & 수분 공급",
+            "Image": "./images/common/ju3.jpg",
+            "pop_img": "./images/common/jub3.jpg",
+            "pop_tit": "JUTANHAK Skin Setting Tone-up Sun Base"
+        },
+        {
+            "Name": "쥬단학 포에버 블러쉬 소프트 필터",
+            "Price": 72000,
+            "Descript": "휘핑 리퀴드 블러쉬 - 블러 매트 피니쉬",
+            "Image": "./images/common/ju4.jpg",
+            "pop_img": "./images/common/jub4.jpg",
+            "pop_tit": "JUTANHAK Essential Mool Deep Cleansing Oil"
+        },
+        {
+            "Name": "쥬단학 로지 글로우 스틱",
+            "Price": 72000,
+            "Descript": "피부 pH에 반응해 생기와 광채를 선사하는 블러쉬 스틱",
+            "best": "Y",
+            "Image": "./images/common/ju5.jpg",
+            "pop_img": "./images/common/jub5.jpg",
+            "pop_tit": "JUTANHAK Skin Setting Tone Correcting Base"
+        },
+        {
+            "Name": "쥬단학 스노우 UV 쉴드 톤업",
+            "Price": 52000,
+            "Descript": "페이셜 UV 프로텍션 - 틴티드 스킨케어 - SPF 50+ PA+++",
+            "Image": "./images/common/ju6.jpg",
+            "pop_img": "./images/common/jub6.jpg",
+            "pop_tit": "JUTANHAK Skin Setting Base SET"
+        },
+        {
+            "Name": "쥬단학 포에버 글로우 루미나이저",
+            "Price": 88000,
+            "Descript": "선명한 빛을 표현하는 하이라이터 - 롱웨어 - 빛나는 광채 하이라이터",
+            "best": "Y",
+            "Image": "./images/common/ju7.jpg",
+            "pop_img": "./images/common/jub7.jpg",
+            "pop_tit": "JUTANHAK Skin Setting Tone-up Sun Base"
+        },
+        {
+            "Name": "쥬단학 르 밤",
+            "Price": 85000,
+            "Descript": "핸드 크림",
+            "best": "Y",
+            "Image": "./images/common/ju8.jpg",
+            "pop_img": "./images/common/jub8.jpg",
+            "pop_tit": "JUTANHAK Essential Skin Nuder Cushion"
+        }
+    ]
+}

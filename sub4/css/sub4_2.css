@@ -1,0 +1,153 @@
+/* 소비자중심기업 본문 영역 */
+
+/* ① CCM 헌장 */
+#content .ccm_charter{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+#content .ccm_charter_logo{
+    flex: none;
+    width: 230px;
+}
+#content .ccm_charter_logo img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+#content .ccm_charter_list{
+    flex: 1;
+}
+#content .ccm_charter_list > div{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 18px 0;
+}
+#content .ccm_charter_list dt{
+    flex: none;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-point3);
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: .95rem;
+}
+#content .ccm_charter_list dd{
+    margin: 0;
+    padding-top: 4px;
+    font-size: .98rem;
+    line-height: 1.7;
+    color: #444;
+}
+#content .ccm_charter_list dd strong{
+    color: var(--color-point3);
+}
+
+/* ② 인증 현황 */
+#content .ccm_cert{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+#content .ccm_cert_text{
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.9;
+    color: #555;
+}
+#content .ccm_cert_text p{
+    margin: 0 0 1.9rem;
+}
+#content .ccm_cert_text p:last-child{
+    margin-bottom: 0;
+}
+#content .ccm_cert_text strong{
+    color: var(--color-point3);
+}
+#content .ccm_cert_imgs{
+    flex: none;
+    display: flex;
+    gap: 16px;
+}
+#content .ccm_cert_imgs img{
+    width: 260px;
+    height: 360px;
+    object-fit: contain;
+    background: #fff;
+    border: 1px solid #eee;
+}
+
+/* ③ CCM이란? */
+#content .ccm_about{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+#content .ccm_about_logo{
+    flex: none;
+    width: 230px;
+}
+#content .ccm_about_logo img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+#content .ccm_about_text{
+    flex: 1;
+}
+#content .ccm_about_eng{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 8px;
+}
+#content .ccm_about_text p{
+    font-size: .98rem;
+    line-height: 1.8;
+    color: #555;
+    margin: 0 0 25px;
+}
+#content .ccm_about_text > p:last-of-type{
+    margin-bottom: 25px;
+}
+#content .ccm_color_legend{
+    display: flex;
+    gap: 6px;
+    margin-bottom: 15px;
+}
+#content .ccm_color_bar{
+    width: 64px;
+    height: 8px;
+}
+#content .ccm_color_bar--orange{ background: var(--color-point1); }
+#content .ccm_color_bar--blue{ background: #5B7FA6; }
+#content .ccm_color_bar--gray{ background: #A8A8A8; }
+#content .ccm_color_desc{
+    font-size: .88rem;
+    line-height: 1.7;
+    color: #888;
+    margin-bottom: 0;
+}
+#content .ccm_color_desc p{
+    margin: 0;
+}
+
+/* ④ LSP 다이어그램 */
+#content .ccm_lsp_img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+#content .ccm_lsp_footnote{
+    margin-top: 30px;
+    padding-left: 16px;
+    border-left: 3px solid var(--color-main);
+    font-size: .85rem;
+    line-height: 1.7;
+    color: #999;
+}

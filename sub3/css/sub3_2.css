@@ -1,0 +1,122 @@
+#content .overview_sec{
+    background: #fff;
+    padding: 70px 0 0;
+}
+#content .overview_sec:first-child{
+    padding-top: 100px;
+}
+#content .overview_sec_inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+#content .overview_sec_inner .sec_badge{
+    display: block;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: .85rem;
+    letter-spacing: .2em;
+    color: var(--color-point1);
+}
+#content .overview_sec_inner h3{
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #222;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--color-point1);
+}
+#content .overview_note{
+    margin-bottom: 15px;
+    text-align: right;
+    font-size: .9rem;
+    color: #888;
+}
+
+#content .overview_table{
+    width: 100%;
+    margin: 0 auto 100px;
+    border-collapse: collapse;
+}
+#content .overview_table tr{
+    border-bottom: 1px solid #eee;
+}
+#content .overview_table th{
+    width: 160px;
+    padding: 18px 20px;
+    background: var(--color-sub1);
+    text-align: left;
+    font-size: .95rem;
+    font-weight: 600;
+    color: #333;
+}
+#content .overview_table td{
+    padding: 18px 24px;
+    font-size: .95rem;
+    color: #444;
+}
+#content .overview_table .sub_note{
+    display: block;
+    font-size: .78rem;
+    font-weight: 400;
+    color: #999;
+    margin-top: 4px;
+}
+
+#content .overview_table--grid thead th{
+    padding: 16px 20px;
+    background: var(--color-sub1);
+    font-size: .92rem;
+    font-weight: 700;
+    color: #222;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+#content .overview_table--grid tbody td,
+#content .overview_table--grid tbody th{
+    padding: 16px 20px;
+    font-size: .92rem;
+    color: #444;
+    text-align: center;
+    white-space: nowrap;
+    border-bottom: 1px solid #eee;
+}
+
+#content .stock_tab{
+    width: 1200px;
+    margin: 40px auto 60px;
+}
+#content .stock_tab ul{
+    display: flex;
+    border-bottom: 2px solid #eee;
+}
+#content .stock_tab ul li{
+    flex: 1;
+    text-align: center;
+}
+#content .stock_tab ul li a{
+    display: block;
+    padding: 16px 0;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #888;
+    border-bottom: 3px solid transparent;
+    transition: color .3s ease, border-color .3s ease;
+}
+#content .stock_tab ul li a.active{
+    color: var(--color-point1);
+    border-bottom-color: var(--color-point1);
+}
+#content .stock_tab ul li a:hover{
+    color: var(--color-point1);
+}
+
+/* 탭 내용 - 선택된 탭만 보이게 */
+#content .tab_panel{
+    display: none;
+}
+
+#content .overview_table--grid td[rowspan],
+#content .overview_table--grid th[rowspan]{
+    vertical-align: middle;
+    background: var(--color-sub1);
+    font-weight: 600;
+}

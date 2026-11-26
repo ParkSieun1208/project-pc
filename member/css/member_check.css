@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/* 회원가입 약관동의 페이지 - 한국화장품 톤앤매너 */
+body{background: linear-gradient(180deg, var(--color-sub3) 0%, var(--color-sub1) 100%); min-height: 100vh;}
+.logo{margin: 60px auto 0; display: block; width: 226px; height: 29px; text-indent: -9999px; overflow: hidden;
+    background: url(../../images/HANKOOK_COSMETICS.png) center no-repeat;}
+
+#content{position: relative; box-sizing: border-box; width: 800px; max-width: 92%;
+    margin: 40px auto 80px; background: #fff; border: 1px solid rgba(210,196,185,.4);
+    border-radius: 12px; box-shadow: 0 20px 60px rgba(159,129,101,.15); overflow: hidden;
+    padding: 60px 70px 56px; font-family: 'Noto Sans KR', sans-serif;}
+#content::before{content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 4px;
+    background: linear-gradient(90deg, var(--color-main), var(--color-point3));}
+
+.join{text-align: left; position: relative;}
+.join h3{font-size: 1.75rem; font-weight: 500; letter-spacing: .05em; text-align: center; color: var(--color-font1); margin-bottom: 20px;}
+.join h3::before{content: 'TERMS'; display: block; margin-bottom: 12px;
+    font-family: 'Roboto', sans-serif; font-size: .75rem; font-weight: 500; letter-spacing: .3em; color: var(--color-main);}
+.join h4{font-size: 1.05rem; font-weight: 500; margin: 36px 0 0; color: var(--color-font1);
+    padding-left: 12px; border-left: 3px solid var(--color-main); line-height: 1.2;}
+
+.join .policy{box-sizing: border-box; height: 120px; margin: 14px 0; padding: 16px 18px; overflow-y: scroll;
+    border: 1px solid var(--color-sub2); border-radius: 8px; background: var(--color-sub3);
+    font-size: .8125rem; line-height: 1.7em; color: #6b625a;}
+.join .policy::-webkit-scrollbar{width: 8px;}
+.join .policy::-webkit-scrollbar-thumb{background: var(--color-sub2); border-radius: 4px;}
+.join .check{position: relative; color: var(--color-font1); font-size: .9rem; margin: 0 0 6px;}
+
+.join .button{text-align: center; margin-top: 50px;}
+.join .button .ok, .join .button button, .join .allcheck{display: inline-block; box-sizing: border-box;
+    width: 260px; height: 56px; line-height: 54px; text-align: center; border-radius: 6px;
+    font-size: 1rem; font-weight: 500; letter-spacing: .1em; cursor: pointer; margin: 0 6px;
+    transition: background .3s, color .3s, box-shadow .3s, transform .3s;}
+.join .button .ok{background: var(--color-main); color: #fff; border: 1px solid var(--color-main);}
+.join .button .ok:hover{background: var(--color-point2); border-color: var(--color-point2); box-shadow: 0 8px 20px rgba(179,105,92,.3); transform: translateY(-1px);}
+.join .allcheck{background: #fff; border: 1px solid var(--color-main); color: var(--color-main);}
+.join .allcheck:hover{background: var(--color-sub1);}
+.join .button .cancel{display: inline-block; width: 200px; line-height: 24px; padding: 8px 0; border: none;
+    background: #999; color: #fff; font-size: 14px; cursor: pointer;}
+
+/* 체크박스 UI변경 */
+input[type=checkbox] + label::before{          /* + => 친구라는 의미 */
+    display: inline-block;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 1.5px solid #cfc4b8;
+    border-radius: 4px;
+    content: '';
+    margin: 0 12px -5px 0;
+    transition: background-color .3s, border-color .3s;
+}
+input[type=checkbox]{            /* display:none 대신 숨김처리 -> 키보드 접근 가능 */
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+}
+input[type=checkbox] + label{
+    cursor: pointer;
+}
+/* 체크박스타입의 인풋이 :checked  => 체크되면 + 라벨의 비포 (체크 아이콘은 이미지 없이 SVG로 처리) */
+input[type=checkbox]:checked + label::before{
+    background: var(--color-main) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'><polyline points='5 12 10 17 19 7'/></svg>") center center / 14px no-repeat;
+    border-color: var(--color-main);
+}
+input[type=checkbox]:focus-visible + label::before{
+    box-shadow: 0 0 0 3px rgba(159,129,101,.3);
+}

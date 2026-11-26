@@ -1,0 +1,207 @@
+#content .ceo_sec{
+    background: #fff;
+}
+#content .ceo_sec_inner{
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 70px;
+    padding: 100px 0 140px;
+}
+   #content .ceo_photo{
+        flex: none;
+        width: 300px;
+        height: 380px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+   #content .ceo_photo img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+   #content .ceo_text h3{
+        font-size: 2.6rem;
+        line-height: 1.5;
+        margin: 15px 0 25px;
+        color: #333;
+    }
+   #content .ceo_text p{
+        font-size: 1.05rem;
+        line-height: 1.9;
+        color: #666;
+        margin-bottom: 18px;
+    }
+   #content .ceo_sign{
+        margin-top: 30px;
+        font-size: 1rem;
+        color: #333;
+    }
+   #content .ceo_sign strong{
+        font-size: 1.1rem;
+    }
+
+    /*  Since 1962 */
+   #content .intro_sec_inner{
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        padding: 120px 0;
+    }
+   #content .intro_year{
+        flex: none;
+        text-align: center;
+    }
+   #content .intro_year .year_label{
+        display: block;
+        font-size: 1rem;
+        letter-spacing: .3em;
+        color: var(--color-point1);
+    }
+   #content .intro_year .year_num{
+        display: block;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 6rem;
+        line-height: 1;
+        color: #222;
+    }
+   #content .intro_text h3{
+        font-size: 2.6rem;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+   #content .intro_text p{
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #555;
+    }
+
+    /*  품질제일주의 */
+   #content .quality_sec{
+        background: #fff;
+    }
+   #content .quality_sec_inner{
+        width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 100px 0 140px;   
+    }
+   #content .sec_badge{
+        display: inline-block;
+        font-size: .85rem;
+        letter-spacing: .2em;
+        color: var(--color-point1);
+        margin-bottom: 20px;
+    }
+   #content .quality_sec_inner h3{
+        font-size: 2.6rem;
+        line-height: 1.5;
+        margin-bottom: 25px;
+        color: #333;
+    }
+   #content .quality_sec_inner p{
+        font-size: 1.05rem;
+        line-height: 1.9;
+        color: #666;
+    }
+       #content .sec_divider{
+        width: 1200px;
+        margin: 0 auto;
+        border: none;
+        border-top: 1px solid #e5e5e5;
+    }
+
+            /* 스탯바 */
+   #content .stat_sec{
+        background: #fafafa;
+        padding: 70px 0;
+    }
+   #content .stat_sec_list{
+        width: 1100px;
+        margin: 0 auto;
+        display: flex;
+    }
+   #content .stat_sec_list li{
+        flex: 1;
+        text-align: center;
+        padding: 0 20px;
+        border-left: 1px solid #ddd;
+    }
+   #content .stat_sec_list li:first-child{ border-left: none; }
+   #content .stat_label{
+        display: block;
+        font-size: .9rem;
+        color: #888;
+        margin-bottom: 12px;
+    }
+   #content .stat_sec_list strong{
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 2.4rem;
+        color: var(--color-point1);
+    }
+   #content .stat_sec_list strong span{
+        font-size: 1.2rem;
+    }
+
+        /* ul>li 구조 */
+    #content .pillar_sec{
+        background: #fff;
+        border-top: 1px solid #eee;
+    }
+    #content .pillar_sec_list li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+        width: 1200px;
+        margin: 0 auto;
+        padding: 110px 0;
+    }
+    #content .pillar_sec_list li.pillar_sec_list--reverse{
+        flex-direction: row-reverse;
+    }
+    #content .pillar_sec_list li + li{
+        border-top: 1px solid #eee;
+    }
+    #content .pillar_img{
+        flex: none;
+        width: 520px;
+        height: 380px;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+    #content .pillar_img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #content .pillar_num{
+        display: block;
+        font-family: "Roboto", sans-serif;
+        font-weight: 200;
+        font-size: 3.5rem;
+        color: #ddd;
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+    #content .pillar_text dt{
+        font-size: 1.9rem;
+        margin: 15px 0 20px;
+        color: #222;
+        font-weight: 700;
+    }
+   #content .pillar_text dd{
+        font-size: 1.05rem;
+        line-height: 1.85;
+        color: #666;
+        margin: 0;
+    }
+
+
+

@@ -1,0 +1,397 @@
+/* 공통 - 키보드로 이동할 때 보이는 테두리 */
+#content a:focus-visible,
+#content button:focus-visible,
+#content input:focus-visible{
+    outline: 3px solid #222;
+    outline-offset: 3px;
+}
+#content .sec_label{
+    display: block;
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: .85rem;
+    font-weight: 700;
+    letter-spacing: .2em;
+    color: #a4524a;
+}
+/* 화면에는 숨기고 스크린리더만 읽는 label */
+#content .hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+}
+
+/* ===== 브랜드 소개 ===== */
+#content .brand_intro{
+    width: 100%;
+    padding: 90px 0 150px;
+    text-align: center;
+    background:
+        radial-gradient(ellipse 50% 35% at 50% 55%, rgba(217,166,160,.13), rgba(217,166,160,0) 100%),
+        linear-gradient(180deg, #ffffff 0%, #fffdfc 25%, #fef9f8 55%, #fdf7f5 100%);
+}
+#content .brand_intro .sec_label,
+#content .brand_intro h3,
+#content .brand_intro p{
+    animation: introFade 1s ease both;
+}
+#content .brand_intro h3{
+    animation-delay: .15s;
+}
+#content .brand_intro p{
+    animation-delay: .3s;
+}
+@keyframes introFade{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#content .brand_intro h3{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 25px;
+}
+#content .brand_intro p{
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: #444;
+    word-break: keep-all;
+}
+
+/* ===== 제품 검색 ===== */
+#content .brand_search{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 90px 0 110px;
+    text-align: center;
+    position: relative;
+}
+#content .brand_search h3{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 30px;
+}
+#content .search_logo{
+    margin-bottom: 30px;
+}
+#content .search_logo img{
+    height: 60px;
+    width: auto;
+}
+#content .search_box{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+#content .search_box input{
+    width: 320px;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 1rem;
+    color: #333;
+}
+#content .search_box button{
+    padding: 12px 22px;
+    border: 0;
+    border-radius: 30px;
+    background: #222;
+    color: #fff;
+    font-size: .95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .3s;
+}
+#content .search_box button:hover{
+    background: var(--color-point1);
+    color: #222;
+}
+#content .search_box .btn_all{
+    background: #efe6e3;
+    color: #333;
+}
+#content .search_box .btn_all:hover{
+    background: var(--color-point1);
+    color: #fff;
+}
+
+/* 연관 검색어 */
+#content .search_suggest{
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    width: 320px;
+    padding: 6px 0;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    box-shadow: 0 10px 24px rgba(0,0,0,.1);
+    text-align: left;
+    z-index: 5;
+}
+#content .search_suggest[hidden]{
+    display: none;
+}
+#content .search_box .search_suggest .suggest_btn{
+    display: block;
+    width: 100%;
+    padding: 10px 18px;
+    border-radius: 0;
+    background: #fff;
+    text-align: left;
+    font-size: .92rem;
+    font-weight: 400;
+    color: #444;
+}
+#content .search_box .search_suggest .suggest_btn:hover{
+    background: #fdf7f5;
+    color: #a4524a;
+}
+
+/* 검색 결과 */
+#content .search_empty{
+    margin-top: 40px;
+    font-size: 1rem;
+    color: #999;
+}
+#content .search_empty[hidden]{
+    display: none;
+}
+#content .search_result{
+    overflow: hidden;
+}
+#content .search_result li{
+    width: 25%;
+    height: 500px;
+    float: left;
+    text-align: center;
+}
+#content .search_result li img{
+    width: 240px;
+    background: #efe6e3;
+}
+#content .search_result li dl{
+    width: 240px;
+    margin: 15px auto;
+    word-break: keep-all;
+}
+#content .search_result li dt{
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 10px;
+    word-break: keep-all;
+}
+#content .search_result li dd{
+    font-size: .9rem;
+    line-height: 1.5em;
+    color: #666;
+    word-break: keep-all;
+}
+#content .search_result li a{
+    color: #a4524a;
+    font-weight: 600;
+    transition: color .3s;
+}
+#content .search_result li a:hover{
+    color: #222;
+}
+
+/* ===== 대표 제품 ===== */
+#content .brand_product{
+    padding: 90px 0 130px;
+    background: #fdf7f5;
+    text-align: center;
+}
+#content .brand_product h3{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 10px;
+}
+#content .brand_product .best_desc{
+    font-size: 1.1rem;
+    color: #555;
+}
+#content .best_list{
+    width: 1000px;
+    margin: 60px auto 0;
+}
+#content .best_list li{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 70px;
+}
+#content .best_list li:last-child{
+    margin-bottom: 0;
+}
+#content .best_list li:nth-child(even){
+    flex-direction: row-reverse;
+}
+#content .best_list .best_img{
+    width: 440px;
+    flex-shrink: 0;
+}
+#content .best_list .best_img img{
+    display: block;
+    width: 100%;
+    border-radius: 24px;
+    background: #efe6e3;
+    box-shadow: 0 12px 30px rgba(0,0,0,.12);
+}
+#content .best_list .best_info{
+    flex: 1;
+    text-align: left;
+}
+#content .best_list .best_en{
+    font-size: .85rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #a4524a;
+}
+#content .best_list h4{
+    margin-top: 12px;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #222;
+}
+#content .best_list .best_txt{
+    margin: 16px 0 20px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #444;
+    word-break: keep-all;
+}
+#content .best_list .best_price{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #222;
+}
+#content .best_list .best_info a{
+    display: inline-block;
+    margin-top: 24px;
+    padding: 14px 32px;
+    border-radius: 30px;
+    background: #222;
+    color: #fff;
+    font-weight: 600;
+    transition: all .3s;
+}
+#content .best_list .best_info a:hover{
+    background: var(--color-point1);
+    color: #222;
+}
+
+/* ===== 상세 팝업 (검색 결과) ===== */
+#content .modal_box{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    z-index: 999;
+}
+#content .popup{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 450px;
+    margin: -225px 0 0 -400px;
+    border-radius: 24px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 20px 60px rgba(0,0,0,.3);
+    z-index: 1000;
+}
+#content .popup_close{
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: #f3eeec;
+    color: #222;
+    font-size: 28px;
+    line-height: 44px;
+    cursor: pointer;
+    z-index: 2;
+    transition: background .3s;
+}
+#content .popup_close:hover{
+    background: var(--color-point1);
+}
+#content .popup_img{
+    float: left;
+    width: 400px;
+    height: 450px;
+    background-position: center;
+    background-size: cover;
+    background-color: #efe6e3;
+}
+#content .popup_info{
+    float: right;
+    width: 400px;
+    padding: 64px 44px 0;
+    box-sizing: border-box;
+    text-align: left;
+}
+#content .popup_info .p_en{
+    font-size: .85rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #a4524a;
+}
+#content .popup_info .p_title{
+    margin-top: 14px;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #222;
+}
+#content .popup_info .p_desc{
+    margin: 16px 0 24px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #444;
+    word-break: keep-all;
+}
+#content .popup_info .p_price{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #222;
+}
+#content .popup_info .p_buy{
+    display: inline-block;
+    margin-top: 28px;
+    padding: 14px 32px;
+    border-radius: 30px;
+    background: #222;
+    color: #fff;
+    font-weight: 600;
+    transition: all .3s;
+}
+#content .popup_info .p_buy:hover{
+    background: var(--color-point1);
+    color: #222;
+}

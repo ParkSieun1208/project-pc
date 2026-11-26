@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* 회원가입 정보 입력 페이지 - 한국화장품 톤앤매너 */
+body{background: linear-gradient(180deg, var(--color-sub3) 0%, var(--color-sub1) 100%);
+    min-height: 100vh; font-size: 16px;}
+h1 a{margin: 60px auto 0; display: block; width: 226px; height: 29px; text-indent: -9999px; overflow: hidden;
+    background: url(../../images/HANKOOK_COSMETICS.png) center no-repeat;}
+
+#content{position: relative; box-sizing: border-box; width: 680px; max-width: 92%;
+    margin: 40px auto 80px; background: #fff; border: 1px solid rgba(210,196,185,.4);
+    border-radius: 12px; box-shadow: 0 20px 60px rgba(159,129,101,.15); overflow: hidden;
+    padding: 60px 70px 56px; font-family: 'Noto Sans KR', sans-serif; font-weight: 400;}
+#content::before{content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 4px;
+    background: linear-gradient(90deg, var(--color-main), var(--color-point3));}
+
+#content>span{display: block; text-align: center; font-size: 1.75rem; font-weight: 500; letter-spacing: .05em; color: var(--color-font1);}
+#content>span::before{content: 'JOIN'; display: block; margin-bottom: 12px;
+    font-family: 'Roboto', sans-serif; font-size: .75rem; font-weight: 500; letter-spacing: .3em; color: var(--color-main);}
+#content>p{text-align: center; color: #8a8178; font-size: .9rem; margin-top: 12px;}
+#content>p::before{content: '*'; color: var(--color-point2); margin-right: 4px;}
+
+#content form{margin-top: 20px; text-align: center;}
+#content form ul{text-align: left;}
+#content form li{margin: 26px 0; font-size: .9rem; font-weight: 500; color: var(--color-font1);}
+#content form li label{display: block; font-weight: 500;}
+#content form li label::after{content: '*'; color: var(--color-point2); margin-left: 3px;}
+#content form li label.hidden::after{content: '';}
+#content form li span{color: var(--color-point2); margin-left: 3px;}
+
+#content form li input, #content form li select{box-sizing: border-box; height: 52px; margin-top: 8px;
+    vertical-align: top; border: 1px solid var(--color-sub2); border-radius: 6px; background: var(--color-sub3);
+    font-family: 'Noto Sans KR', sans-serif; font-size: 1rem; color: var(--color-font1);
+    transition: border-color .3s, box-shadow .3s, background .3s;}
+#content form li input{width: 100%; padding: 0 18px;}
+#content form li select{padding: 0 10px; cursor: pointer;}
+#content form li #hp1{width: 30%;}
+#content form li input#hp2, #content form li input#hp3{width: 30%;}
+#content form li input#mail1, #content form li input#mail2{width: 46%;}
+#content form li input::placeholder{color: #cfc6bc; font-family: 'Noto Sans KR', sans-serif; font-weight: 300; font-size: .9rem;}
+#content form li input:focus, #content form li select:focus{outline: none; border-color: var(--color-main);
+    background: #fff; box-shadow: 0 0 0 3px rgba(159,129,101,.15);}
+
+#content form li:last-child{margin-bottom: 50px;}
+
+#content input[type=submit], #content input[type=reset]{box-sizing: border-box; width: 48%; height: 56px; margin: 0 .8%;
+    border-radius: 6px; font-family: 'Noto Sans KR', sans-serif; font-size: 1rem; font-weight: 500; letter-spacing: .2em;
+    cursor: pointer; transition: background .3s, color .3s, box-shadow .3s, transform .3s;}
+#content input[type=submit]{border: 0; background: var(--color-main); color: #fff;}
+#content input[type=submit]:hover{background: var(--color-point2); box-shadow: 0 8px 20px rgba(179,105,92,.3); transform: translateY(-1px);}
+#content input[type=reset]{border: 1px solid var(--color-main); background: #fff; color: var(--color-main);}
+#content input[type=reset]:hover{background: var(--color-sub1);}

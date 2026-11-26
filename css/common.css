@@ -1,0 +1,372 @@
+@charset "UTF-8";
+/* 전체 페이지 공통css */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto:wght@100..900&display=swap');
+
+:root{
+    --color-main: #9F8165;
+    --color-point1 : #C08974;
+    --color-point2 : #B3695C;
+    --color-point3 : #D9A6A0; 
+    --color-sub1 : #F7F3EF;
+    --color-sub2 : #E7E1DA;
+    --color-sub3 : #FDF9F5;
+
+    --color-font1 : #333;
+
+    --font-h2-size: 3.75rem;      /* 60px */
+    --font-h3-size:  3rem;          /* 48px */
+    --font-h4-size: 2rem;          /* 32px */
+    --font-h5-size: 2rem;          /* 32px */
+    --font-h6-size: 2rem;          /* 32px */
+
+    --font-gnb-size: 1.25rem;     /* 20px */
+    --font-18-size: 1.13rem;     /* 18px */
+    --font-16-size: 1rem;   /* 16px */
+    --font-14-size: 0.88rem;   /* 14px */
+    --font-12-size: 0.75rem;  /* 12px */
+
+    --box-shadow1 : 1px 1px 10px 1px rgba(0,0,0,.3);
+    --box-shadow2 : 2px 2px 10px 2px rgba(0,0,0,.4);
+
+} 
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/* reset */
+*{margin: 0; padding: 0;}
+html{font-size: 16px;}
+body{font-family: "Noto Sans KR", sans-serif;color: #333;}
+a{color: #333; text-decoration: none; display: block;}
+ol,ul{list-style: none;}
+table{border-collapse: collapse;}
+address{font-style: normal;}
+img{border: 0; vertical-align: top;}
+.hidden{position: absolute; left:-1000%; top:0;display: block;
+        width: 1px; height: 1px; overflow: hidden; 
+        color: #fff;}
+#skipNav{
+    position: fixed;left:0; top:0;
+    width: 100%;overflow: hidden;z-index: 110;
+}
+#skipNav a{
+    height: 1px;
+    margin-bottom: -1px;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+#skipNav a:focus{
+    height: auto;
+    padding: 10px 0;
+    background: #AA1722;
+}
+
+#wrap{width: 100%; overflow: hidden;}
+
+/* 공통 헤더영역 */
+#headerArea{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 100;
+    background: rgba(255,255,255,.7);
+    backdrop-filter: blur(8px);
+    border-bottom: 0.06rem solid rgba(210, 196, 185, .4);
+    transition: background .5s ease-out;
+}
+#headerArea .header_inner{
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#headerArea .logo a{
+    width: 226px;
+    height: 29px;
+    background: url(../images/HANKOOK_COSMETICS.png) no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+    position: relative;
+    top: 5px;
+}
+#headerArea #gnb{
+    width: 850px;
+}
+
+#headerArea #gnb .dropdownmenu{ width: 100%; display: flex;}
+#headerArea	#gnb .dropdownmenu .menu{position:relative; width:16.666%; }
+#headerArea    #gnb .dropdownmenu .menu .depth1{padding: 16px 0;  color: #333;text-align: center; 
+    transition: all .3s ; }
+#headerArea #gnb .dropdownmenu .menu .depth1::after{
+    content: ''; display: block;
+    width: 60%; position: absolute; height: 3px; background: #9f8165;
+    bottom: 0; left:20%; transform: scaleX(0); transition: all .5s ease-out;
+}
+#headerArea #gnb .dropdownmenu .menu .active::after{
+    transform: scaleX(1);
+}
+	
+    /* 2depth */
+#headerArea #gnb .dropdownmenu li ul{width:100%; height:120px; 
+		  position:absolute;top:59px;left:0;
+		  padding:15px 0; display: none;}
+#headerArea	#gnb ul.dropdownmenu ul li{ text-align:center; font-weight:bold;}
+#headerArea	#gnb ul.dropdownmenu ul li a{padding:7px 0;  color:#333; transition: all .5s;}
+#headerArea	#gnb ul.dropdownmenu ul li a:hover{color:#fff; background:var(--color-point1); border-radius: 5px; }
+
+
+
+#headerArea .top_menu{
+    display: flex;
+    gap:15px;
+    position: relative;
+}
+
+/* 로그인 · 회원가입 */
+#headerArea .top_menu{
+    display: flex;
+    gap: 0.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+/* 로그인 · 회원가입 공통 */
+#headerArea .top_menu li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 2rem;
+    box-sizing: border-box;
+
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    letter-spacing: 0.08rem;
+    text-align: center;
+    white-space: nowrap;
+
+    border-radius: 0.25rem;
+    transition: background .3s ease, color .3s ease;
+}
+
+/* 로그인 */
+#headerArea .top_menu li:first-child a{
+    color: var(--color-main);
+    border: 0.06rem solid var(--color-main);
+}
+
+#headerArea .top_menu li:first-child a:hover{
+    color: #fff;
+    background: var(--color-point3);
+}
+
+/* 회원가입 */
+#headerArea .top_menu li:last-child a{
+    color: #fff;
+    background: var(--color-main);
+    border: none;
+
+}
+
+#headerArea .top_menu li:last-child a:hover{
+    background: var(--color-point2);
+}
+
+
+/* 공통 푸터영역 */
+#footerArea{
+    width: 100%;
+    background: var(--color-sub1);
+}
+#footerArea .footer_inner{
+    width: 1400px;
+    margin: 0 auto;
+}
+
+/* 약관 · Family site */
+.footer_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 40px 0;
+
+    border-bottom: 0.06rem solid rgba(210, 196, 185, .3);
+}
+
+.footer_policy{
+    display: flex;
+    gap: 30px;
+}
+
+.footer_policy li a{
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--color-font1);
+    transition: color .3s ease;
+}
+
+.footer_policy li a:hover{
+    color: var(--color-main);
+}
+
+/* .footer_family{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 140px;
+    height: 40px;
+
+    box-sizing: border-box;
+    background: #fff;
+    border: 0.06rem solid #D2C4B9;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 8px rgba(210, 196, 185, .25);
+} */
+
+.footer_family p{
+    font-family: "Roboto", sans-serif;
+    font-size: 0.88rem;
+    font-weight: 400;
+    color: #333;
+}
+
+/* 로고 · 사업자정보 · 카피라이트 */
+.footer_bottom{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding: 40px 0 60px;
+}
+
+.footer_logo a{
+    display: block;
+
+    width: 226px;
+    height: 29px;
+
+    margin-bottom: 25px;
+
+    background: url(../images/HANKOOK_COSMETICS.png) no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.footer_address{
+    width: 700px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 30px;
+}
+
+.footer_address p{
+    width: 50%;
+
+    margin-bottom: 10px;
+
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 0.88rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: var(--color-font1);
+}
+
+.footer_address p span{
+    font-weight: 700;
+}
+
+.footer_copyright{
+    font-family: "Roboto", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--color-font1);
+}
+
+.footer_sns{
+    display: flex;
+    gap: 12px;
+}
+
+.footer_sns li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 36px;
+    height: 36px;
+
+    border-radius: 50%;
+    background: var(--color-sub2);
+
+    color: #333;
+    font-size: 1rem;
+    transition: background .3s ease, color .3s ease;
+}
+
+.footer_sns li a:hover{
+    background: var(--color-main);
+    color: #fff;
+}
+
+
+/* 상단으로 이동 */
+#footerArea .top_move{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--color-main);
+    color : #fff;
+    font-weight: 600;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    box-shadow: var(--box-shadow1);
+    transition: all .5s ease-out;
+    display:none;
+}
+#footerArea .top_move:hover{
+    background: #fff;
+    color: var(--color-main);
+}
+#footerArea .top_move span{
+    display: block;
+    width: 100%; height: 100%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 패밀리사이트 선택 리스트 */
+#footerArea .footer_family{
+    width: 140px;
+    box-sizing: border-box;
+    background: #fff;
+    border: 0.06rem solid #D2C4B9;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 8px rgba(210, 196, 185, .25);
+    position: relative;
+}
+#footerArea .select .arrow{ display:block; font-size:1em; padding: 10px 0;
+    text-align: center; transition: all 1s;}
+#footerArea .select .arrow i{font-size:.8em ; color: red;}
+#footerArea .select .arrow:hover{color:#fff; background:var(--color-main);}
+#footerArea .select .aList{ position:absolute; top:-177px; left:-1px; width: 140px;; 
+    border:1px solid #ccc; display:none}
+#footerArea .select .aList li{ line-height:1.5em; border-bottom:1px solid #ccc; background: #fff;}
+#footerArea .select .aList li a{display:block;text-align: center; padding: 5px 0; transition: all 1s;}
+#footerArea .select .aList li a:hover{color:#fff; background: var(--color-main);}

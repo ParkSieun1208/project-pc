@@ -1,0 +1,201 @@
+
+
+/* 윤리경영선언 */
+#content .ethics_declare{
+    background: #fff;
+    padding: 100px 0 80px;
+    text-align: center;
+}
+#content .ethics_declare .sec_badge{
+    display: inline-block;
+    font-size: .85rem;
+    letter-spacing: .2em;
+    color: var(--color-point1);
+    margin-bottom: 20px;
+}
+#content .ethics_declare h3{
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #222;
+}
+#content .ethics_declare_text{
+    width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+#content .ethics_declare_text p{
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: #555;
+    margin-bottom: 25px;
+}
+#content .ethics_declare_text p .point{
+    color: var(--color-point2);
+    font-weight: 700;
+}
+#content .ethics_declare_img{
+    width: 900px;
+    height: 400px;
+    margin: 50px auto 0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+#content .ethics_declare_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 윤리경영규범 */
+#content .ethics_code{
+    background: var(--color-sub1);
+    padding: 110px 0;
+}
+#content .ethics_code_inner{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+#content .ethics_code_text .sec_badge{
+    display: inline-block;
+    font-size: .85rem;
+    letter-spacing: .2em;
+    color: var(--color-point1);
+    margin-bottom: 20px;
+}
+#content .ethics_code_text h3{
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    color: #222;
+}
+#content .ethics_code_text p{
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: #555;
+    margin-bottom: 18px;
+}
+#content .ethics_pdf_btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    padding: 14px 28px;
+    background: var(--color-point1);
+    color: #fff;
+    font-weight: 700;
+    font-size: .95rem;
+    border-radius: 30px;
+    transition: background .3s ease;
+}
+#content .ethics_pdf_btn:hover{
+    background: var(--color-point2);
+}
+#content .ethics_code_img{
+    flex: none;
+    width: 420px;
+    height: 320px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+#content .ethics_code_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 신고센터 */
+#content .ethics_report{
+    position: relative;
+    background: #222;
+    color: #fff;
+    padding: 130px 0;
+    overflow: hidden;
+}
+#content .ethics_report::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 45%;
+    background: url(../images/common/ethics_coffee_pencil.jpg) no-repeat left center;
+    background-size: cover;
+    -webkit-mask-image: linear-gradient(100deg, rgba(0,0,0,.15) 0%, transparent 70%);
+    mask-image: linear-gradient(100deg, rgba(0,0,0,.35) 0%, transparent 70%);
+    z-index: 0;
+}
+#content .ethics_report_inner{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    z-index: 1;
+}
+#content .ethics_report .sec_badge{
+    display: inline-block;
+    font-size: .85rem;
+    letter-spacing: .2em;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 4px 14px;
+    margin-bottom: 20px;
+}
+#content .ethics_report h3{
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+}
+#content .ethics_report_grid{
+    display: flex;
+    gap: 70px;
+}
+#content .ethics_report_block{
+    flex: 1;
+}
+#content .ethics_report_block h4{
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+}
+#content .ethics_report_block ul li{
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 14px;
+    font-size: .95rem;
+    line-height: 1.7;
+    color: #ccc;
+}
+#content .ethics_report_block ul li::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--color-point3);
+}
+#content .ethics_report_contact div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(255,255,255,.15);
+}
+#content .ethics_report_contact dt{
+    flex: none;
+    width: 110px;
+    font-size: .95rem;
+    color: #ccc;
+}
+#content .ethics_report_contact dt i{
+    margin-right: 8px;
+    color: var(--color-point3);
+}
+#content .ethics_report_contact dd{
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
